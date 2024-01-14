@@ -8,8 +8,8 @@ By running this program on the MR headset, you can obtain the subject's relative
 
 ## Quick Start 快速上手👍
 
-You can quickly experience the project by downloading and installing the SHEC.apk package.  
-你可以下载安装包SHEC.apk快速体验
+You can quickly experience the project by downloading and installing the [SHEC.apk](https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/blob/main/SHEC.apk) package.  
+你可以下载安装包[SHEC.apk](https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/blob/main/SHEC.apk)快速体验
 
 ### Operating Instructions 操作方法
 
@@ -34,9 +34,9 @@ Right-hand controller button B: End collection
 
 **4. Data Structure 数据结构**  
 Data path: "PICO 4 Pro\Internal Shared Storage\Android\data\com.TsinghuaUniv.SHEC\files"  
-Data is stored in JSON format. For data structure details, see Assets/Scripts/Data/DataStructure.cs  
+Data is stored in JSON format. For data structure details, see [Assets/Scripts/Data/DataStructure.cs](https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/blob/main/Assets/Scripts/Data/DataStructure.cs)  
 数据路径"PICO 4 Pro\内部共享存储空间\Android\data\com.TsinghuaUniv.SHEC\files"  
-数据以json格式存储，数据结构详见Assets/Scripts/Data/DataStructure.cs
+数据以json格式存储，数据结构详见[Assets/Scripts/Data/DataStructure.cs](https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/blob/main/Assets/Scripts/Data/DataStructure.cs)
 
 **5. Data Types 数据类型**  
 | 数据类型              | 数据名                          | 详解                                       | 支持设备                                 |
