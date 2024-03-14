@@ -49,7 +49,7 @@ Data is stored in JSON format. For data structure details, see [Assets/Scripts/D
 | 浮点值                | LeftEyePupilDiameter/RightEyePupilDiameter | 左右眼瞳孔直径              | Pico 4 enterprise                       |
 | 布尔值或浮点值        | LeftEyeOpenness/RightEyeOpenness | 左右眼开合情况（布尔: pro）左右眼眼睑开合度（浮点：enterprise） | Pico 4 pro/ Pico 4 enterprise   |
 
-## Secondary Development 二次开发
+## Custom Development 二次开发
 
 The project is developed using Unity, and this code repository includes all necessary files to create a Unity project. You can build upon this project for further development.  
 项目基于Unity开发，本代码库已包含创建一个Unity项目所需的所有必要文件，你可以在本项目基础上进行二次开发。
