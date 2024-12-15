@@ -8,9 +8,13 @@ using UnityEngine;
 public class RoomCapture : MonoBehaviour
 {
     public GameObject anchorPrefab;
+    [HideInInspector]
     public GameObject anchorObject;
+    [HideInInspector]
     public Vector3 OriginLocation = new Vector3();
+    [HideInInspector] 
     public Quaternion OriginRotation = new Quaternion();
+    [HideInInspector]
     public ulong OriginHandle = 0;
 
     Dictionary<ulong, PxrEventAnchorEntityLoaded> anchorEntityResults = new Dictionary<ulong, PxrEventAnchorEntityLoaded>();

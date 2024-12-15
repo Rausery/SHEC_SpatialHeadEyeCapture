@@ -1,13 +1,12 @@
 {
   "dependencies": {
-    "com.unity.collab-proxy": "2.0.4",
+    "com.unity.collab-proxy": "2.4.4",
     "com.unity.feature.development": "1.0.1",
-    "com.unity.pico.livepreview": "file:G:/Unity_Projects/PICO Unity Live Preview Plugin (Experiment)",
     "com.unity.textmeshpro": "3.0.6",
-    "com.unity.timeline": "1.7.4",
+    "com.unity.timeline": "1.7.6",
     "com.unity.ugui": "1.0.0",
-    "com.unity.visualscripting": "1.8.0",
-    "com.unity.xr.picoxr": "file:G:/Unity_Projects/PICO Unity Integration SDK 230",
+    "com.unity.visualscripting": "1.9.4",
+    "com.unity.xr.picoxr": "file:D:/Document/UnityProjects/PICO Unity Integration SDK 230",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
