@@ -3,28 +3,31 @@ Unity project for collecting spatial head pose and eye tracking data using a mix
 By running this program on the MR headset, you can obtain the subject's relative **head pose** and **eye-tracking data** with respect to the **spatial anchor**  
 这是一个用MR头显采集大空间头部位姿和眼动数据的Unity项目，通过在MR头显上运行该程序，你可以获得佩戴者相对于**空间锚点**的**头部位姿**和**眼动数据**。
 
-**Note:** Currently, this project is developed exclusively for **Pico 4**, with plans to port it to HoloLens 2.  
-**注意：**目前，该项目仅针对**Pico 4**进行开发，有计划移植到HoloLens 2。
+**Note:** Currently, this project is developed for **Pico 4** and [**Rhino X**](https://developer.ximmerse.com/#/), with plans to port it to **HoloLens 2**.  
+**注意：**目前，该项目支持的设备包括**Pico 4**和[**Rhino X**](https://developer.ximmerse.com/#/)，随后也会移植到**HoloLens 2**。
 
 ## Quick Start 快速上手👍
 
-You can quickly experience the project by downloading and installing the [SHEC.apk](https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/blob/main/SHEC.apk) package.  
-你可以下载安装包[SHEC.apk](https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/blob/main/SHEC.apk)快速体验
+You can quickly experience the project by downloading and installing the [SHEC.apk](https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/blob/main/Pico4/SHEC.apk) or [SHEC_RhinoX.apk](https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/blob/main/RhinoX/SHEC_RhinoX.apk)package.  
+你可以下载安装包[SHEC.apk](https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/blob/main/SHEC.apk)或[SHEC_RhinoX.apk](https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/blob/main/RhinoX/SHEC_RhinoX.apk)快速体验
 
 ### Operating Instructions 操作方法
 
-**1. Spatial Calibration 空间标定**  
+**1. Spatial Calibration 空间标定 (for Pico 4)**  
 Before starting the program, you need to calibrate using Pico's spatial calibration tool. The room size doesn't matter, but furniture calibration is essential. The first **corner** of the first **table** you calibrate will be considered the **spatial anchor point**, and all collected data will be relative to this anchor point.  
 启动程序之前，你需要利用Pico系统的空间标定工具进行标定，房间范围无所谓，关键是家具标定，你标定的第一个**桌子**的第一个**角点**会被视为**空间锚点**，采集的所有数据都是相对于这个锚点的数据
 
-**2. Spatial Anchor 空间锚点**⚓  
+**2. Spatial Anchor 空间锚点 (for Pico 4)** ⚓
 <div>
-<img src="https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/assets/116069411/2465ec5e-398e-4937-b6d4-1207188bd6ea" alt="image" style="width:15%;" />
+<img src="https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/Pico4/assets/116069411/2465ec5e-398e-4937-b6d4-1207188bd6ea" alt="image" style="width:15%;" />
 </div>
 
 The spatial anchor will be loaded within 2 seconds after the program starts, with red representing the X-axis, blue representing the Y-axis, and green representing the Z-axis. It is recommended to choose easily recognizable features on the environmental plane as the spatial anchor.  
 空间锚点会在程序启动后的2s内加载完毕，红色为X轴，蓝色为Y轴，绿色为Z轴  
 建议选择环境平面上易识别的特征点作为空间锚点
+
+**Note:** If the device used is **RhinoX**, skip steps 1 and 2, and directly use the physical space anchor.  
+**注意：** 如果使用的设备是**RhinoX**，跳过第1步和第2步，直接使用实体空间锚点。
 
 **3. Formal Data Collection 正式采集**  
 Right-hand controller button A: Start collection  
@@ -33,16 +36,16 @@ Right-hand controller button B: End collection
 右侧手柄B键：结束采集  
 
 **4. Data Structure 数据结构**  
-Data path: "PICO 4 Pro\Internal Shared Storage\Android\data\com.TsinghuaUniv.SHEC\files"  
-Data is stored in JSON format. For data structure details, see [Assets/Scripts/Data/DataStructure.cs](https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/blob/main/Assets/Scripts/Data/DataStructure.cs)  
-数据路径"PICO 4 Pro\内部共享存储空间\Android\data\com.TsinghuaUniv.SHEC\files"  
-数据以json格式存储，数据结构详见[Assets/Scripts/Data/DataStructure.cs](https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/blob/main/Assets/Scripts/Data/DataStructure.cs)
+Data path: "PICO 4 Pro\Internal Shared Storage\Android\data\com.TsinghuaUniv.SHEC\files"  Likewise for Rhino X.
+Data is stored in CSV format. For data structure details, see [Assets/Scripts/Data/DataStructure.cs](https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/blob/main/Assets/Scripts/Data/DataStructure.cs)  
+数据路径"PICO 4 Pro\内部共享存储空间\Android\data\com.TsinghuaUniv.SHEC\files" Rhino X同理 
+数据以CSV格式存储，数据结构详见[Assets/Scripts/Data/DataStructure.cs](https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/blob/main/Assets/Scripts/Data/DataStructure.cs)
 
 **5. Data Types 数据类型**  
 | 数据类型              | 数据名                          | 详解                                       | 支持设备                                 |
 |----------------------|--------------------------------|-------------------------------------------|----------------------------------------|
-| 三维坐标              | Position                       | 头部坐标                                   | Pico 4/ Pico 4 pro/ Pico 4 enterprise   |
-| 单位向量              | Direction                      | 头部朝向                                   | Pico 4/ Pico 4 pro/ Pico 4 enterprise   |
+| 三维坐标              | Position                       | 头部坐标                                   | Pico 4/ Pico 4 pro/ Pico 4 enterprise/ Rhino X/ Rhino X 2 |
+| 单位向量              | Direction                      | 头部朝向                                   | Pico 4/ Pico 4 pro/ Pico 4 enterprise/ Rhino X/ Rhino X 2 |
 | 三维坐标              | ET_Position                    | 双眼概括模型坐标                           | Pico 4 pro/ Pico 4 enterprise           |
 | 单位向量              | ET_Orientation                 | 双眼概括模型目视方向                     | Pico 4 pro/ Pico 4 enterprise           |
 | 三维坐标              | ET_ScreenPosition              | (x,y) 表示注视点在录屏画面上的坐标，左下角为原点, z为眼动小球与摄像机的距离，无意义，请忽略     | Pico 4 pro/ Pico 4 enterprise           |
