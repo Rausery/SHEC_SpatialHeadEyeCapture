@@ -19,7 +19,7 @@ Before starting the program, you need to calibrate using Pico's spatial calibrat
 
 **2. Spatial Anchor 空间锚点 (for Pico 4)** ⚓
 <div>
-<img src="https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/blob/main/fig/SpatialAnchor.png" alt="image" style="width:15%;" />
+<img src="https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/blob/main/fig/SpatialAnchor.png" alt="image" style="width:50%;" />
 </div>
 
 The spatial anchor will be loaded within 2 seconds after the program starts, with red representing the X-axis, blue representing the Y-axis, and green representing the Z-axis. It is recommended to choose easily recognizable features on the environmental plane as the spatial anchor.  
