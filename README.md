@@ -19,7 +19,7 @@ Before starting the program, you need to calibrate using Pico's spatial calibrat
 
 **2. Spatial Anchor 空间锚点 (for Pico 4)** ⚓
 <div>
-<img src="https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/Pico4/assets/116069411/2465ec5e-398e-4937-b6d4-1207188bd6ea" alt="image" style="width:15%;" />
+<img src="https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/blob/main/fig/SpatialAnchor.png" alt="image" style="width:15%;" />
 </div>
 
 The spatial anchor will be loaded within 2 seconds after the program starts, with red representing the X-axis, blue representing the Y-axis, and green representing the Z-axis. It is recommended to choose easily recognizable features on the environmental plane as the spatial anchor.  
@@ -37,9 +37,9 @@ Right-hand controller button B: End collection
 
 **4. Data Structure 数据结构**  
 Data path: "PICO 4 Pro\Internal Shared Storage\Android\data\com.TsinghuaUniv.SHEC\files"  Likewise for Rhino X.
-Data is stored in CSV format. For data structure details, see [Assets/Scripts/Data/DataStructure.cs](https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/blob/main/Assets/Scripts/Data/DataStructure.cs)  
+Data is stored in CSV format. For data structure details, see Assets/Scripts/Data/DataStructure.cs  
 数据路径"PICO 4 Pro\内部共享存储空间\Android\data\com.TsinghuaUniv.SHEC\files" Rhino X同理 
-数据以CSV格式存储，数据结构详见[Assets/Scripts/Data/DataStructure.cs](https://github.com/Rausery/SHEC_SpatialHeadEyeCapture/blob/main/Assets/Scripts/Data/DataStructure.cs)
+数据以CSV格式存储，数据结构详见Assets/Scripts/Data/DataStructure.cs
 
 **5. Data Types 数据类型**  
 | 数据类型              | 数据名                          | 详解                                       | 支持设备                                 |
