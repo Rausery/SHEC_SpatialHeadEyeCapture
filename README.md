@@ -29,6 +29,10 @@ The spatial anchor will be loaded within 2 seconds after the program starts, wit
 **Note:** If the device used is **RhinoX**, skip steps 1 and 2, and directly use the physical space anchor.  
 **注意：** 如果使用的设备是**RhinoX**，跳过第1步和第2步，直接使用实体空间锚点。
 
+<div>
+<img src="https://doc.ximmerse.com/sdkconf/unitysdk/_images/MarkerGizmos.png" alt="image" style="width:50%;" />
+</div>
+
 **3. Formal Data Collection 正式采集**  
 Right-hand controller button A: Start collection  
 Right-hand controller button B: End collection  
