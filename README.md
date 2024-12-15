@@ -30,7 +30,7 @@ The spatial anchor will be loaded within 2 seconds after the program starts, wit
 **注意：** 如果使用的设备是**RhinoX**，跳过第1步和第2步，直接使用实体空间锚点。
 
 <div>
-<img src="https://doc.ximmerse.com/sdkconf/unitysdk/_images/MarkerGizmos.png" alt="image" style="width:50%;" />
+<img src="https://doc.ximmerse.com/sdkconf/unitysdk/_images/MarkerGizmos.png" alt="image" style="width:30%;" />
 </div>
 
 **3. Formal Data Collection 正式采集**  
